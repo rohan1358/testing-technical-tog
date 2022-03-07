@@ -20,9 +20,14 @@ const App: () => Node = () => {
 
   return (
     <>
-      {!finish ? (
+    <View
+          style={{
+            flex: 1,
+          }}>
+          <Main />
+        </View>
+      {/* {!finish ? (
         <LottieView
-          style={{}}
           source={splashScreen}
           autoPlay
           onAnimationFinish={() => setFinish(true)}
@@ -32,11 +37,10 @@ const App: () => Node = () => {
         <View
           style={{
             flex: 1,
-            backgroundColor: 'lightblue',
           }}>
           <Main />
         </View>
-      )}
+      )} */}
     </>
   );
 };
